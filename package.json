@@ -6,6 +6,9 @@
   "author": "katayama8000 <tattu.0310@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "@types/node": "^18.15.13",
