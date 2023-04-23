@@ -1,5 +1,5 @@
 describe('math random with spyOn', () => {
-  let spy;
+  let spy: jest.SpyInstance;
   afterEach(() => {
     spy.mockRestore();
   });

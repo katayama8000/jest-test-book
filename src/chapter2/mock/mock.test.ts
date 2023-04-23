@@ -1,6 +1,6 @@
 describe('mock test', () => {
   test('mock obj specification', () => {
-    // mockにはよくつかypropertie
+    // mockにはよくつかうプロパティがある
     // mock.calls: 関数が呼ばれたときの引数の配列
     // mock.results: 関数が呼ばれたときの戻り値の配列
     // type: 'return' or 'throw' or 'incomplete'
