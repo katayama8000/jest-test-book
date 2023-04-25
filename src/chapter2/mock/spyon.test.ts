@@ -1,12 +1,13 @@
 describe('math random with spyOn', () => {
-  let spy: jest.SpyInstance;
+  let mockSpy: jest.SpyInstance;
   afterEach(() => {
-    spy.mockRestore();
+    mockSpy.mockRestore();
   });
 
   test('return 1', () => {
     // 第一引数にオブジェクト、第二引数にメソッドを指定してその関数を上書きする
-    spy = jest.spyOn(Math, 'random').mockReturnValue(1);
+    mockSpy = jest.spyOn(Math, 'random').mockReturnValue(1);
+    console.log(mockSpy.mock.calls);
     expect(Math.random()).toBe(1);
   });
   test('return under 1', () => {

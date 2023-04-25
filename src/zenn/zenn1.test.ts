@@ -1,7 +1,7 @@
 describe('zenn1', () => {
   const mockFunction = jest.fn();
-  console.log(mockFunction.mock);
-  //   console.log(mock);
+  // console.log(mockFunction.mock);
+  // console.log(mock);
   test('mock', () => {
     expect(mockFunction).not.toHaveBeenCalled();
   });
@@ -16,8 +16,8 @@ describe('zenn1', () => {
   test('mock called with arguments', () => {
     mockFunction('foo', 'bar', 'baz');
     expect(mockFunction).toHaveBeenCalledWith('foo', 'bar', 'baz');
-    console.log(mockFunction.mock.calls);
     expect(mockFunction.mock.calls[0]).toEqual(['foo', 'bar', 'baz']);
+    console.log(mockFunction.mock.calls[0]);
   });
 
   test('mock return value', () => {
